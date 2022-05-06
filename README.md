@@ -4,4 +4,4 @@
 
 [![Run on Repl.it](https://repl.it/badge/github/Evgeny-Vovk/ICS2O-Phaser3-SpaceAliens-HTML)](https://repl.it/github/Evgeny-Vovk/ICS2O-Phaser3-SpaceAliens-HTML)
 
-This game can be found at: [https://Evgeny-Vovk.github.io/ICS2O-Phaser3-SpaceAliens-HTML](https://Mr-Coxall.github.io/ICS2O-Phaser3-SpaceAliens-HTML)
+This game can be found at: [https://Evgeny-Vovk.github.io/ICS2O-Phaser3-SpaceAliens-HTML](https://Evgeny-Vovk.github.io/ICS2O-Phaser3-SpaceAliens-HTML)
