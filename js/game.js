@@ -23,10 +23,10 @@ const config = {
     default: "arcade",
     arcade: {
       debug: true,
-    },
+    }
   },
   // set background color
-  backgroundColor: 0x5f6e7a,
+  backgroundColor: 0xffffff,
   scale: {
     mode: Phaser.Scale.FIT,
     // we place it in the middle of the page.
