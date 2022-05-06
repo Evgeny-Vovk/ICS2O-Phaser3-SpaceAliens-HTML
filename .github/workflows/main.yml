@@ -15,12 +15,6 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@master
 
-      - name: Prettify code
-        uses: creyD/prettier_action@v4.2
-        with:
-          # This part is also where you can pass other options, for example:
-          prettier_options: --write **/*.{html,css,js,md}
-
       - name: Run GitHub Super Linter
         uses: github/super-linter@main
         env:
