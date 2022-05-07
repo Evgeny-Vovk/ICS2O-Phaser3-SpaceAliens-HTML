@@ -18,6 +18,7 @@ const titleScene = new TitleScene()
 const menuScene = new MenuScene()
 const gameScene = new GameScene()
 
+
 //* Game scene */
 const config = {
   type: Phaser.AUTO,
@@ -30,13 +31,14 @@ const config = {
     }
   },
   // set background color
-  backgroundColor: 0xffffff,
+  backgroundColor: 0x101E4A,
   scale: {
     mode: Phaser.Scale.FIT,
     // we place it in the middle of the page.
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
 }
+
 
 const game = new Phaser.Game(config)
 

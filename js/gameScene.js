@@ -14,29 +14,41 @@ class GameScene extends Phaser.Scene {
     this.ship = null
     this.fireMissile = false
   }
+  
 
   init(data) {
-    this.cameras.main.setBackgroundColor("#ffffff")
+    this.cameras.main.setBackgroundColor("#101E4A")
   }
 
   preload() {
     console.log("Game Scene")
 
+    // background music
+    this.load.audio("music", "./assets/music.mp3")
     // images
     this.load.image("starBackground", "./assets/starBackground.png")
     this.load.image("ship", "./assets/spaceShip.png")
     this.load.image("missile", "./assets/missile.png")
+    // sound
+    this.load.audio("laser", "./assets/laser1.wav")
   }
 
   create(data) {
-    this.background = this.add.image(0, 0, "starBackground").setScale(2.0)
+    this.background = this.add.image(0, 0, "starBackground")
     this.background.setOrigin(0, 0)
 
     this.ship = this.physics.add.sprite(1920 / 2, 1080 - 100, "ship")
 
     //create a group for the missiles
     this.missileGroup = this.physics.add.group()
-  }
+
+    //background music
+    this.music =  this.sound.add('music', {
+  		volume: 0.3,
+  		loop: true
+  	})
+  	this.music.play()
+    }
 
   update(time, delta) {
     //called 60 times a second.
@@ -82,6 +94,7 @@ class GameScene extends Phaser.Scene {
         this.fireMissile = true
         const aNewMissile = this.physics.add.sprite(this.ship.x, this.ship.y, "missile")
         this.missileGroup.add(aNewMissile)
+        this.sound.play("laser")
       }
     }
 
